@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="portfolio-build" content="V128">
+  <meta name="portfolio-build" content="V137">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madhusmita Patra — Senior Graphic Designer</title>
@@ -4135,7 +4135,9 @@ html.dark .presentation-page-count,body.dark .presentation-page-count{background
 .uiux-project-view{flex:0 0 auto;color:#C96F3B;font-size:8px;letter-spacing:.12em;font-weight:700;padding-top:4px;}
 .uiux-lightbox{position:fixed;inset:0;z-index:10030;background:rgba(10,20,30,.94);display:flex;align-items:flex-start;justify-content:center;padding:24px;overflow:auto;}
 .uiux-lightbox-stage{width:min(1100px,94vw);position:relative;padding-top:8px;}
-.uiux-lightbox-stage img{display:block;width:100%;height:auto;background:#fff;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.35);}
+.uiux-lightbox-stage img{display:block;width:100%;height:auto;background:#fff;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.35);}.uiux-lightbox-stage iframe{display:block;width:min(1100px,94vw);height:min(82vh,900px);background:#fff;border:0;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.35);}
+.uiux-lightbox-open-pdf{display:inline-flex;align-items:center;gap:7px;margin:10px auto 0;padding:8px 12px;border:1px solid rgba(255,255,255,.25);border-radius:999px;color:#fff;text-decoration:none;font-size:8px;letter-spacing:.12em;text-transform:uppercase;}
+@media(max-width:760px){.uiux-lightbox-stage iframe{width:100%;height:78vh;}}
 .uiux-lightbox-close{position:fixed;top:18px;right:18px;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;font-size:27px;line-height:1;z-index:2;}
 .uiux-lightbox-caption{font-size:8px;letter-spacing:.13em;text-transform:uppercase;color:#fff;opacity:.82;text-align:center;padding:10px 0 4px;}
 html.dark .uiux-project-card{background:#172B40;border-color:rgba(230,238,246,.13);}
@@ -5276,7 +5278,7 @@ html.dark .carousel-dot.is-active, body.dark .carousel-dot.is-active{background:
     <span class="cta-flip-face cta-flip-back">Start a Conversation</span>
   </span>
 </a>
-<a class="cta-flip cta-flip--secondary" href="Madhusmita_Patra_Resume.pdf" download aria-label="Download Madhusmita Patra resume">
+<a class="cta-flip cta-flip--secondary" href="assets/pdfs/Madhusmita_Patra_Resume.pdf" download aria-label="Download Madhusmita Patra resume">
   <span class="cta-flip-inner">
     <span class="cta-flip-face cta-flip-front">Download Resume</span>
     <span class="cta-flip-face cta-flip-back">
@@ -5349,6 +5351,12 @@ html.dark .carousel-dot.is-active, body.dark .carousel-dot.is-active{background:
           </div>
           <div class="tool-chip">
             <span class="chip-icon-wrap"><span class="chip-emoji">💬</span><span class="chip-logo" style="background:#10A37F;color:#fff;font-size:8.5px;">GPT</span></span> ChatGPT
+          </div>
+          <div class="tool-chip">
+            <span class="chip-icon-wrap"><span class="chip-emoji">🧠</span><span class="chip-logo" style="background:#D97757;color:#fff;font-size:8px;">Cl</span></span> Claude
+          </div>
+          <div class="tool-chip">
+            <span class="chip-icon-wrap"><span class="chip-emoji">✦</span><span class="chip-logo" style="background:#1F4163;color:#fff;font-size:7.5px;">St</span></span> Stitch AI
           </div>
         </div>
       </div>
@@ -5685,6 +5693,10 @@ document.querySelectorAll('.work-card[data-project-page]').forEach(card=>{
 });
 </script>
 <script>/* V105 — 2050 Coffee House website UI/UX asset. */ window.__uiuxCoffeeHousePages = [{"page":1,"src":"assets/images/image-005.jpg"}];</script>
+<script>/* V137 — new UI/UX landing-page PDF projects. */ window.__uiuxLandingPages = [
+  {type:'ktgs-pre-primary', title:'KTGS — Pre-Primary Landing Page', caption:'KT Global School · Pre-Primary Landing Page · UI/UX Design', pdf:'assets/pdfs/KTGS_Pre_Primary_Landing_Page.pdf', thumb:'assets/images/uiux-ktgs-pre-primary.jpg'},
+  {type:'ktgs-middle-school', title:'KTGS — Middle School Landing Page', caption:'KT Global School · Middle School Landing Page · UI/UX Design', pdf:'assets/pdfs/KTGS_Middle_School_Landing_Page.pdf', thumb:'assets/images/uiux-ktgs-middle-school.jpg'}
+];</script>
 <script>
 (function(){
   const intro = document.querySelector('.tool-intro-animation');
@@ -7022,8 +7034,10 @@ const renderEditorialPublications = (activeCategory='newsletter') => {
 
     const titePages=window.__uiuxPdfPages || [];
     const coffeePages=window.__uiuxCoffeeHousePages || [];
+    const landingPages=window.__uiuxLandingPages || [];
     const tite=titePages[0];
     const coffee=coffeePages[0];
+    const projectCount=(titePages.length ? 1 : 0) + (coffeePages.length ? 1 : 0) + landingPages.length;
 
     grid.innerHTML=`
       <div class="uiux-project-intro">
@@ -7032,7 +7046,7 @@ const renderEditorialPublications = (activeCategory='newsletter') => {
           <h3>Website UI / UX Projects</h3>
           <p>A selection of website interface and homepage layout work, presented as focused visual studies with full-page previews.</p>
         </div>
-        <span class="uiux-project-count">${(titePages.length ? 1 : 0) + (coffeePages.length ? 1 : 0)} PROJECTS</span>
+        <span class="uiux-project-count">${projectCount} PROJECTS</span>
       </div>
 
       <div class="uiux-project-list">
@@ -7059,6 +7073,18 @@ const renderEditorialPublications = (activeCategory='newsletter') => {
             <span class="uiux-project-view">VIEW FULL LAYOUT ↗</span>
           </div>
         </article>` : ''}
+
+        ${landingPages.map((project)=>`
+        <article class="uiux-project-card" data-uiux-landing="${project.type}" tabindex="0" role="button" aria-label="Open ${project.title}">
+          <div class="uiux-project-preview">
+            <img src="${project.thumb}" alt="${project.title} preview" loading="lazy" decoding="async">
+            <span class="uiux-project-badge">LANDING PAGE UI / UX</span>
+          </div>
+          <div class="uiux-project-meta">
+            <div><h3>${project.title}</h3><p>Website landing page · UI / UX design</p></div>
+            <span class="uiux-project-view">VIEW FULL PDF ↗</span>
+          </div>
+        </article>`).join('')}
       </div>`;
 
     const openUiux=(type)=>{
@@ -7084,19 +7110,41 @@ const renderEditorialPublications = (activeCategory='newsletter') => {
       stage.addEventListener('click',e=>{if(e.target===stage) close();});
     };
 
+    const openLandingPdf=(project)=>{
+      const stage=document.createElement('div');
+      stage.className='uiux-lightbox';
+      stage.innerHTML=`
+        <button type="button" class="uiux-lightbox-back" aria-label="Back">← Back</button>
+        <button type="button" class="uiux-lightbox-close" aria-label="Close UI/UX PDF preview">×</button>
+        <div class="uiux-lightbox-stage">
+          <iframe src="${project.pdf}#view=FitH" title="${project.title} PDF preview"></iframe>
+          <div class="uiux-lightbox-caption">${project.caption}</div>
+          <a class="uiux-lightbox-open-pdf" href="${project.pdf}" target="_blank" rel="noopener">OPEN FULL PDF ↗</a>
+        </div>`;
+      const close=()=>{stage.remove();document.removeEventListener('keydown',onKey);};
+      const onKey=(e)=>{if(e.key==='Escape') close();};
+      document.body.appendChild(stage);
+      document.addEventListener('keydown',onKey);
+      stage.querySelector('.uiux-lightbox-close').onclick=close;
+      stage.querySelector('.uiux-lightbox-back').onclick=close;
+      stage.addEventListener('click',e=>{if(e.target===stage) close();});
+    };
+
     grid.querySelectorAll('[data-uiux-project]').forEach(card=>{
       const type=card.dataset.uiuxProject;
       card.addEventListener('click',e=>{e.stopPropagation();openUiux(type);});
       card.addEventListener('keydown',e=>{
-        if(e.key==='Enter'||e.key===' '){
-          e.preventDefault();
-          openUiux(type);
-        }
+        if(e.key==='Enter'||e.key===' '){e.preventDefault();openUiux(type);}
+      });
+    });
+    grid.querySelectorAll('[data-uiux-landing]').forEach(card=>{
+      const project=landingPages.find(p=>p.type===card.dataset.uiuxLanding);
+      card.addEventListener('click',e=>{e.stopPropagation();if(project)openLandingPdf(project);});
+      card.addEventListener('keydown',e=>{
+        if(e.key==='Enter'||e.key===' '){e.preventDefault();if(project)openLandingPdf(project);}
       });
     });
   };
-
-  
   /* V114: hierarchical project history. Every time a nested view replaces the
      current gallery, the exact previous DOM state is saved. */
   const galleryHistory = [];
