@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<defs>
+  <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#5A7897" stop-opacity=".055"/>
+    <stop offset=".72" stop-color="#5A7897" stop-opacity=".018"/>
+    <stop offset="1" stop-color="#5A7897" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<ellipse cx="800" cy="430" rx="520" ry="330" fill="url(#halo)"/>
+
+<!-- Oversized, low-opacity MP -->
+<text x="800" y="585"
+      text-anchor="middle"
+      font-family="Georgia, Times New Roman, serif"
+      font-size="690"
+      font-weight="700"
+      letter-spacing="-75"
+      fill="#1F4163"
+      fill-opacity=".045">MP</text>
+
+<!-- Fine oversized arcs -->
+<g fill="none" stroke="#1F4163" stroke-opacity=".075">
+  <path d="M-130 420 C150 85 540 -40 850 55 C1170 150 1380 420 1715 485" stroke-width="1.2"/>
+  <path d="M-170 505 C130 165 525 30 845 135 C1165 240 1360 505 1735 560" stroke-width=".8"/>
+  <path d="M-110 850 C190 650 470 590 710 650 C980 718 1250 850 1710 760" stroke-width=".8"/>
+</g>
+
+<!-- Quiet micro typography -->
+<g font-family="Arial, Helvetica, sans-serif" fill="#1F4163">
+  
+  
+  
+</g>
+
+<!-- Registration / graphic marks -->
+<g stroke="#1F4163" stroke-opacity=".13" stroke-width="1" fill="none">
+  <path d="M90 112h28M104 98v28"/>
+  <path d="M1468 116h28M1482 102v28"/>
+  <path d="M1468 788h28M1482 774v28"/>
+</g>
+
+<!-- Tiny orange accents -->
+<g fill="#C96F3B" fill-opacity=".48">
+  <circle cx="128" cy="216" r="3"/>
+  <circle cx="1440" cy="690" r="2.5"/>
+</g>
+<g stroke="#C96F3B" stroke-opacity=".34" stroke-width="1.5">
+  <path d="M134 215h28"/>
+  <path d="M1410 690h18"/>
+</g>
+
+<!-- Fine grain-like dot field -->
+<g fill="#1F4163" fill-opacity=".035">
+  <circle cx="220" cy="280" r="1"/><circle cx="250" cy="310" r="1"/>
+  <circle cx="280" cy="280" r=".8"/><circle cx="1320" cy="250" r="1"/>
+  <circle cx="1350" cy="280" r=".8"/><circle cx="1380" cy="250" r="1"/>
+  <circle cx="310" cy="740" r=".8"/><circle cx="340" cy="770" r="1"/>
+</g>
+</svg>
