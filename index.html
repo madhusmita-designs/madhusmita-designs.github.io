@@ -1,8 +1,8 @@
-<!-- V135 — Final portfolio: professional Behance/LinkedIn links only -->
+<!-- V138 — Production portfolio cleanup + resume refresh -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="portfolio-build" content="V137">
+  <meta name="portfolio-build" content="V128">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Madhusmita Patra — Senior Graphic Designer</title>
@@ -302,14 +302,6 @@
     font-size:12.5px; opacity:.55; flex-wrap:wrap; gap:10px;
   }
   @media (max-width:700px){ .footer-grid{ grid-template-columns:1fr; } }
-
-  .note{
-    position:fixed; bottom:18px; right:18px; max-width:260px; z-index:100;
-    background:var(--card); border:1px solid var(--line); border-radius:12px;
-    padding:14px 16px; font-size:12.5px; color:var(--ink-soft); box-shadow:var(--shadow);
-  }
-  .note b{ color:var(--ink); }
-  .note button{ position:absolute; top:8px; right:10px; border:none; background:none; cursor:pointer; font-size:13px; color:var(--ink-soft); }
 
   .exp-company-head{
     display:flex; justify-content:space-between; gap:20px; align-items:baseline;
@@ -4116,6 +4108,8 @@ html.dark .presentation-page-count,body.dark .presentation-page-count{background
 <script>/* V104 — UI/UX website layout asset. */ window.__uiuxPdfPages = [{"page":1,"src":"assets/images/image-001.jpg","orientation":"tall"}];</script>
 <script>/* V106 — lightweight UI/UX project thumbnails. */ window.__uiuxPdfThumb = "assets/images/image-002.jpg";</script>
 <script>/* V106 — lightweight UI/UX project thumbnails. */ window.__uiuxCoffeeHouseThumb = "assets/images/image-003.jpg";</script>
+<script>/* V138 — additional UI/UX landing-page projects. */ window.__uiuxKtgsPrePrimary = {src:"assets/images/image-175.jpg", pdf:"assets/pdfs/KTGS_Pre_Primary.pdf"};</script>
+<script>/* V138 — additional UI/UX landing-page projects. */ window.__uiuxKtgsMiddle = {src:"assets/images/image-176.jpg", pdf:"assets/pdfs/KTGS_Middle_School.pdf"};</script>
 <style>
 /* V104 — UI/UX project presentation only. Existing baseline styles remain untouched. */
 .uiux-project-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:24px;padding:0 2px;}
@@ -4135,9 +4129,7 @@ html.dark .presentation-page-count,body.dark .presentation-page-count{background
 .uiux-project-view{flex:0 0 auto;color:#C96F3B;font-size:8px;letter-spacing:.12em;font-weight:700;padding-top:4px;}
 .uiux-lightbox{position:fixed;inset:0;z-index:10030;background:rgba(10,20,30,.94);display:flex;align-items:flex-start;justify-content:center;padding:24px;overflow:auto;}
 .uiux-lightbox-stage{width:min(1100px,94vw);position:relative;padding-top:8px;}
-.uiux-lightbox-stage img{display:block;width:100%;height:auto;background:#fff;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.35);}.uiux-lightbox-stage iframe{display:block;width:min(1100px,94vw);height:min(82vh,900px);background:#fff;border:0;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.35);}
-.uiux-lightbox-open-pdf{display:inline-flex;align-items:center;gap:7px;margin:10px auto 0;padding:8px 12px;border:1px solid rgba(255,255,255,.25);border-radius:999px;color:#fff;text-decoration:none;font-size:8px;letter-spacing:.12em;text-transform:uppercase;}
-@media(max-width:760px){.uiux-lightbox-stage iframe{width:100%;height:78vh;}}
+.uiux-lightbox-stage img{display:block;width:100%;height:auto;background:#fff;border-radius:8px;box-shadow:0 24px 80px rgba(0,0,0,.35);}
 .uiux-lightbox-close{position:fixed;top:18px;right:18px;width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;font-size:27px;line-height:1;z-index:2;}
 .uiux-lightbox-caption{font-size:8px;letter-spacing:.13em;text-transform:uppercase;color:#fff;opacity:.82;text-align:center;padding:10px 0 4px;}
 html.dark .uiux-project-card{background:#172B40;border-color:rgba(230,238,246,.13);}
@@ -5278,7 +5270,7 @@ html.dark .carousel-dot.is-active, body.dark .carousel-dot.is-active{background:
     <span class="cta-flip-face cta-flip-back">Start a Conversation</span>
   </span>
 </a>
-<a class="cta-flip cta-flip--secondary" href="assets/pdfs/Madhusmita_Patra_Resume.pdf" download aria-label="Download Madhusmita Patra resume">
+<a class="cta-flip cta-flip--secondary" href="Madhusmita_Patra_Resume.pdf" download aria-label="Download Madhusmita Patra resume">
   <span class="cta-flip-inner">
     <span class="cta-flip-face cta-flip-front">Download Resume</span>
     <span class="cta-flip-face cta-flip-back">
@@ -5353,10 +5345,10 @@ html.dark .carousel-dot.is-active, body.dark .carousel-dot.is-active{background:
             <span class="chip-icon-wrap"><span class="chip-emoji">💬</span><span class="chip-logo" style="background:#10A37F;color:#fff;font-size:8.5px;">GPT</span></span> ChatGPT
           </div>
           <div class="tool-chip">
-            <span class="chip-icon-wrap"><span class="chip-emoji">🧠</span><span class="chip-logo" style="background:#D97757;color:#fff;font-size:8px;">Cl</span></span> Claude
+            <span class="chip-icon-wrap"><span class="chip-emoji">◐</span><span class="chip-logo" style="background:#111;color:#fff;font-size:8px;">AI</span></span> Claude
           </div>
           <div class="tool-chip">
-            <span class="chip-icon-wrap"><span class="chip-emoji">✦</span><span class="chip-logo" style="background:#1F4163;color:#fff;font-size:7.5px;">St</span></span> Stitch AI
+            <span class="chip-icon-wrap"><span class="chip-emoji">✦</span><span class="chip-logo" style="background:linear-gradient(135deg,#7C3AED,#2563EB);color:#fff;font-size:8px;">S</span></span> Stitch AI
           </div>
         </div>
       </div>
@@ -5610,7 +5602,6 @@ html.dark .carousel-dot.is-active, body.dark .carousel-dot.is-active{background:
         <div class="contact-row"><span class="ic">📞</span> +91 8117827243</div>
         <div class="contact-row"><span class="ic">📍</span> Bhubaneswar, Odisha, India</div>
         <div class="socials">
-          <a href="https://www.behance.net/madhusmitapatra3" aria-label="Behance"><svg class="social-icon social-icon-be" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 9h9.1c3.7 0 6 1.8 6 4.5 0 1.7-.9 3-2.5 3.7 2.1.6 3.3 2 3.3 4.1 0 3.1-2.6 5-6.6 5H8V9Zm4.3 3.7v3h4.2c1.4 0 2.3-.5 2.3-1.5s-.9-1.5-2.3-1.5h-4.2Zm0 6.3v3.6h4.7c1.6 0 2.6-.6 2.6-1.8s-1-1.8-2.6-1.8h-4.7Z"/></svg></a>
           <a href="https://www.linkedin.com/in/madhusmita-patra/" aria-label="LinkedIn"><svg class="social-icon social-icon-in" viewBox="0 0 32 32" aria-hidden="true"><path d="M7.3 11.2h4.4v13.7H7.3V11.2Zm2.2-5.7a2.6 2.6 0 1 1 0 5.2 2.6 2.6 0 0 1 0-5.2ZM14.3 11.2h4.2v1.9h.1c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.5 3 5.5 7v7.1H24v-6.3c0-1.5 0-3.5-2.1-3.5s-2.4 1.7-2.4 3.4v6.4h-4.4V11.2Z"/></svg></a>
         </div>
       </div>
@@ -5652,10 +5643,6 @@ html.dark .carousel-dot.is-active, body.dark .carousel-dot.is-active{background:
   </div>
 </footer>
 
-<div class="note" id="editNote">
-  <button onclick="document.getElementById('editNote').style.display='none'">✕</button>
-  <b>Portfolio V1.</b><br>Project visuals, project names, case studies and social URLs can be added when the final content is ready.
-</div>
 
 <script>
   // Theme toggle
@@ -5693,10 +5680,6 @@ document.querySelectorAll('.work-card[data-project-page]').forEach(card=>{
 });
 </script>
 <script>/* V105 — 2050 Coffee House website UI/UX asset. */ window.__uiuxCoffeeHousePages = [{"page":1,"src":"assets/images/image-005.jpg"}];</script>
-<script>/* V137 — new UI/UX landing-page PDF projects. */ window.__uiuxLandingPages = [
-  {type:'ktgs-pre-primary', title:'KTGS — Pre-Primary Landing Page', caption:'KT Global School · Pre-Primary Landing Page · UI/UX Design', pdf:'assets/pdfs/KTGS_Pre_Primary_Landing_Page.pdf', thumb:'assets/images/uiux-ktgs-pre-primary.jpg'},
-  {type:'ktgs-middle-school', title:'KTGS — Middle School Landing Page', caption:'KT Global School · Middle School Landing Page · UI/UX Design', pdf:'assets/pdfs/KTGS_Middle_School_Landing_Page.pdf', thumb:'assets/images/uiux-ktgs-middle-school.jpg'}
-];</script>
 <script>
 (function(){
   const intro = document.querySelector('.tool-intro-animation');
@@ -7020,131 +7003,22 @@ const renderEditorialPublications = (activeCategory='newsletter') => {
   };
 
   const renderDigitalExperience = () => {
-    const eyebrow=overlay.querySelector('.gallery-eyebrow'),
-          title=overlay.querySelector('.gallery-title'),
-          description=overlay.querySelector('.gallery-desc'),
-          grid=overlay.querySelector('.gallery-grid'),
-          backButton=overlay.querySelector('.gallery-back');
-    backButton.hidden = true;
-    backButton.onclick = null;
+    const eyebrow=overlay.querySelector('.gallery-eyebrow'), title=overlay.querySelector('.gallery-title'), description=overlay.querySelector('.gallery-desc'), grid=overlay.querySelector('.gallery-grid'), backButton=overlay.querySelector('.gallery-back');
+    backButton.hidden=true; backButton.onclick=null;
     overlay.classList.remove('brand-identity-gallery','packaging-print-gallery','editorial-publications-gallery','social-campaign-gallery','brand-pdf-active');
-    eyebrow.textContent='UI / UX DESIGN';
-    title.textContent='Digital Experience';
-    description.textContent='Website UI/UX work presented as focused homepage layouts and digital experience studies.';
-
-    const titePages=window.__uiuxPdfPages || [];
-    const coffeePages=window.__uiuxCoffeeHousePages || [];
-    const landingPages=window.__uiuxLandingPages || [];
-    const tite=titePages[0];
-    const coffee=coffeePages[0];
-    const projectCount=(titePages.length ? 1 : 0) + (coffeePages.length ? 1 : 0) + landingPages.length;
-
-    grid.innerHTML=`
-      <div class="uiux-project-intro">
-        <div>
-          <span class="gallery-eyebrow">Featured Work</span>
-          <h3>Website UI / UX Projects</h3>
-          <p>A selection of website interface and homepage layout work, presented as focused visual studies with full-page previews.</p>
-        </div>
-        <span class="uiux-project-count">${projectCount} PROJECTS</span>
-      </div>
-
-      <div class="uiux-project-list">
-        ${tite ? `
-        <article class="uiux-project-card" data-uiux-project="tite" tabindex="0" role="button" aria-label="Open TITE Home Page UI/UX project">
-          <div class="uiux-project-preview">
-            <img src="${window.__uiuxPdfThumb || tite.src}" alt="TITE Home Page UI/UX layout preview" loading="lazy" decoding="async">
-            <span class="uiux-project-badge">WEBSITE UI / UX</span>
-          </div>
-          <div class="uiux-project-meta">
-            <div><h3>TITE — Home Page Layout</h3><p>Homepage structure · visual hierarchy · responsive web experience</p></div>
-            <span class="uiux-project-view">VIEW FULL LAYOUT ↗</span>
-          </div>
-        </article>` : ''}
-
-        ${coffee ? `
-        <article class="uiux-project-card" data-uiux-project="coffee" tabindex="0" role="button" aria-label="Open 2050 Coffee House website UI/UX project">
-          <div class="uiux-project-preview">
-            <img src="${window.__uiuxCoffeeHouseThumb || coffee.src}" alt="2050 Coffee House website UI/UX layout preview" loading="lazy" decoding="async">
-            <span class="uiux-project-badge">WEBSITE UI / UX</span>
-          </div>
-          <div class="uiux-project-meta">
-            <div><h3>2050 Coffee House — Website Layout</h3><p>Homepage concept · brand experience · content hierarchy</p></div>
-            <span class="uiux-project-view">VIEW FULL LAYOUT ↗</span>
-          </div>
-        </article>` : ''}
-
-        ${landingPages.map((project)=>`
-        <article class="uiux-project-card" data-uiux-landing="${project.type}" tabindex="0" role="button" aria-label="Open ${project.title}">
-          <div class="uiux-project-preview">
-            <img src="${project.thumb}" alt="${project.title} preview" loading="lazy" decoding="async">
-            <span class="uiux-project-badge">LANDING PAGE UI / UX</span>
-          </div>
-          <div class="uiux-project-meta">
-            <div><h3>${project.title}</h3><p>Website landing page · UI / UX design</p></div>
-            <span class="uiux-project-view">VIEW FULL PDF ↗</span>
-          </div>
-        </article>`).join('')}
-      </div>`;
-
-    const openUiux=(type)=>{
-      const page = type==='coffee' ? coffee : tite;
-      if(!page) return;
-      const projectTitle = type==='coffee' ? '2050 Coffee House — Website UI/UX' : 'TITE — Home Page UI/UX';
-      const projectCaption = type==='coffee' ? '2050 Coffee House · Website UI/UX Layout · Full-page view' : 'TITE · Home Page UI/UX Layout · Full-page view';
-      const stage=document.createElement('div');
-      stage.className='uiux-lightbox';
-      stage.innerHTML=`
-        <button type="button" class="uiux-lightbox-back" aria-label="Back">← Back</button>
-        <button type="button" class="uiux-lightbox-close" aria-label="Close UI/UX preview">×</button>
-        <div class="uiux-lightbox-stage">
-          <img src="${page.src}" alt="${projectTitle} full layout" loading="eager" decoding="async">
-          <div class="uiux-lightbox-caption">${projectCaption}</div>
-        </div>`;
-      const close=()=>{stage.remove();document.removeEventListener('keydown',onKey);};
-      const onKey=(e)=>{if(e.key==='Escape') close();};
-      document.body.appendChild(stage);
-      document.addEventListener('keydown',onKey);
-      stage.querySelector('.uiux-lightbox-close').onclick=close;
-      stage.querySelector('.uiux-lightbox-back').onclick=close;
-      stage.addEventListener('click',e=>{if(e.target===stage) close();});
-    };
-
-    const openLandingPdf=(project)=>{
-      const stage=document.createElement('div');
-      stage.className='uiux-lightbox';
-      stage.innerHTML=`
-        <button type="button" class="uiux-lightbox-back" aria-label="Back">← Back</button>
-        <button type="button" class="uiux-lightbox-close" aria-label="Close UI/UX PDF preview">×</button>
-        <div class="uiux-lightbox-stage">
-          <iframe src="${project.pdf}#view=FitH" title="${project.title} PDF preview"></iframe>
-          <div class="uiux-lightbox-caption">${project.caption}</div>
-          <a class="uiux-lightbox-open-pdf" href="${project.pdf}" target="_blank" rel="noopener">OPEN FULL PDF ↗</a>
-        </div>`;
-      const close=()=>{stage.remove();document.removeEventListener('keydown',onKey);};
-      const onKey=(e)=>{if(e.key==='Escape') close();};
-      document.body.appendChild(stage);
-      document.addEventListener('keydown',onKey);
-      stage.querySelector('.uiux-lightbox-close').onclick=close;
-      stage.querySelector('.uiux-lightbox-back').onclick=close;
-      stage.addEventListener('click',e=>{if(e.target===stage) close();});
-    };
-
-    grid.querySelectorAll('[data-uiux-project]').forEach(card=>{
-      const type=card.dataset.uiuxProject;
-      card.addEventListener('click',e=>{e.stopPropagation();openUiux(type);});
-      card.addEventListener('keydown',e=>{
-        if(e.key==='Enter'||e.key===' '){e.preventDefault();openUiux(type);}
-      });
-    });
-    grid.querySelectorAll('[data-uiux-landing]').forEach(card=>{
-      const project=landingPages.find(p=>p.type===card.dataset.uiuxLanding);
-      card.addEventListener('click',e=>{e.stopPropagation();if(project)openLandingPdf(project);});
-      card.addEventListener('keydown',e=>{
-        if(e.key==='Enter'||e.key===' '){e.preventDefault();if(project)openLandingPdf(project);}
-      });
-    });
+    eyebrow.textContent='UI / UX DESIGN'; title.textContent='Digital Experience'; description.textContent='Website UI/UX work presented as focused homepage layouts and digital experience studies.';
+    const tite=(window.__uiuxPdfPages||[])[0], coffee=(window.__uiuxCoffeeHousePages||[])[0], pre=window.__uiuxKtgsPrePrimary, middle=window.__uiuxKtgsMiddle;
+    const projects=[
+      tite&&{type:'tite',page:tite,title:'TITE — Home Page Layout',caption:'TITE · Home Page UI/UX Layout · Full-page view',alt:'TITE Home Page UI/UX layout preview',meta:'Homepage structure · visual hierarchy · responsive web experience'},
+      coffee&&{type:'coffee',page:coffee,title:'2050 Coffee House — Website Layout',caption:'2050 Coffee House · Website UI/UX Layout · Full-page view',alt:'2050 Coffee House website UI/UX layout preview',meta:'Homepage concept · brand experience · content hierarchy'},
+      pre&&{type:'pre',page:pre,title:'KTGS — Pre-Primary Landing Page',caption:'KTGS · Pre-Primary Landing Page · Full-page view',alt:'KTGS Pre-Primary landing page preview',meta:'Landing page design'},
+      middle&&{type:'middle',page:middle,title:'KTGS — Middle School Landing Page',caption:'KTGS · Middle School Landing Page · Full-page view',alt:'KTGS Middle School landing page preview',meta:'Landing page design'}
+    ].filter(Boolean);
+    grid.innerHTML=`<div class="uiux-project-intro"><div><span class="gallery-eyebrow">Featured Work</span><h3>Website UI / UX Projects</h3><p>A selection of website interface and homepage layout work, presented as focused visual studies with full-page previews.</p></div><span class="uiux-project-count">${projects.length} PROJECTS</span></div><div class="uiux-project-list">${projects.map(project=>`<article class="uiux-project-card" data-uiux-project="${project.type}" tabindex="0" role="button" aria-label="Open ${project.title}"><div class="uiux-project-preview"><img src="${project.page.src}" alt="${project.alt}" loading="lazy" decoding="async"><span class="uiux-project-badge">WEBSITE UI / UX</span></div><div class="uiux-project-meta"><div><h3>${project.title}</h3><p>${project.meta}</p></div><span class="uiux-project-view">VIEW FULL LAYOUT ↗</span></div></article>`).join('')}</div>`;
+    const openUiux=(type)=>{ const project=projects.find(p=>p.type===type); if(!project)return; const stage=document.createElement('div'); stage.className='uiux-lightbox'; stage.innerHTML=`<button type="button" class="uiux-lightbox-back" aria-label="Back">← Back</button><button type="button" class="uiux-lightbox-close" aria-label="Close UI/UX preview">×</button><div class="uiux-lightbox-stage"><img src="${project.page.src}" alt="${project.title} full layout" loading="eager" decoding="async"><div class="uiux-lightbox-caption">${project.caption}</div></div>`; const close=()=>{stage.remove();document.removeEventListener('keydown',onKey);}; const onKey=e=>{if(e.key==='Escape')close();}; document.body.appendChild(stage); document.addEventListener('keydown',onKey); stage.querySelector('.uiux-lightbox-close').onclick=close; stage.querySelector('.uiux-lightbox-back').onclick=close; stage.addEventListener('click',e=>{if(e.target===stage)close();}); };
+    grid.querySelectorAll('[data-uiux-project]').forEach(card=>{const type=card.dataset.uiuxProject; card.addEventListener('click',e=>{e.stopPropagation();openUiux(type);}); card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openUiux(type);}});});
   };
+
   /* V114: hierarchical project history. Every time a nested view replaces the
      current gallery, the exact previous DOM state is saved. */
   const galleryHistory = [];

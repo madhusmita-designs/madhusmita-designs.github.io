@@ -1,11 +1,17 @@
-# Madhusmita Patra Portfolio — V137 Production Edition
+# Madhusmita Patra Portfolio — V136 Production Edition
 
-This is the production-ready static portfolio site for Madhusmita Patra.
+This is the production-ready static version of the portfolio.
 
-## V137 updates
-- Added two new UI/UX landing-page PDF projects:
-  - KTGS — Pre-Primary Landing Page
-  - KTGS — Middle School Landing Page
-- Added the final Madhusmita Patra resume PDF and connected the existing Download Resume button.
-- Added Claude and Stitch AI to the AI-Assisted Creative tools, using the same existing tool-chip interaction.
-- Preserved the V136 design, layout, content, existing projects, and interactions.
+## Folder structure
+
+- `index.html` — main portfolio page
+- `assets/images/` — external image assets
+- `assets/pdfs/` — PDF documents used by portfolio viewers
+- `assets/icons/` — SVG graphic assets
+- `.nojekyll` — keeps GitHub Pages deployment as a static site
+
+## Deployment
+
+Upload the contents of this folder to a GitHub repository and enable GitHub Pages from the repository's Pages settings.
+
+V135 remains the original master backup. V136 is an optimized deployment copy.
